@@ -1,0 +1,139 @@
+@import url('https://fonts.googleapis.com/css2?family=Chakra+Petch:wght@400;500&family=Inter&display=swap');
+
+:root {
+    --color-background: #01080E;
+    --color-background-box: #0B0D20;
+    --color-text: #D7F9FF;
+    --color-contrast: #2BDEFD;
+    --color-off: #212333;
+    --color-border: #2b64fd;
+    --font-title: "Chakra Petch", sans-serif;
+    --font-text: "Inter", sans-serif;
+}
+
+body {
+    display: flex;
+    justify-content: center;
+    background-color: var(--color-background);
+    align-items: center;
+    min-height: 100vh;
+}
+
+h1 {
+    color: var(--color-contrast);
+    font-size: 32px;
+    font-family: var(--font-title);
+    text-align: center;
+}
+
+p {
+    font-family: var(--font-text);
+    font-size: 24px;
+}
+
+.color-yellow {
+    color: #ffef08;
+}
+
+.div--main {
+    display: flex;
+    flex-direction: column;
+    width: 90%;
+    max-width: 600px;
+    align-items: center;
+    justify-content: center;
+    background: transparent;
+    padding: 20px;
+    height: 100%;
+    position: relative;
+}
+
+.div--anim-background {
+    padding: 0 20px;
+    position: absolute;
+    max-width: 600px;
+    background-color: var(--color-background-box);
+    z-index: -1;
+    width: 100%;
+    border: 2px solid var(--color-border);
+    border-radius: 15px;
+    transition: height 0.5s;
+}
+
+.div--main:hover {
+    max-height: 1500px;
+}
+
+.p--text {
+    color: var(--color-text);
+    width: inherit;
+    padding: 30px;
+    border: 2px solid var(--color-border);
+    border-left: none;
+    border-right: none;
+    border-radius: 15px; 
+    position: relative;
+    transition: opacity 0.5s;
+}
+
+.div--buttons {
+    display: flex;
+    flex-direction: column;
+    width: 90%;
+}
+
+button {
+    padding: 10px;
+    font-size: 20px;
+    font-family: var(--font-title);
+    background-color: var(--color-contrast);
+    border: solid 1px var(--font-text);
+    color: black;
+    margin-top: 20px;
+    border-radius: 10px;
+    cursor: pointer;
+    border: 0px solid white;
+    transition: box-shadow 0.2s;
+}
+
+button:last-child {
+    background-color: var(--color-off);
+    color: var(--color-text)
+}
+
+button:hover {
+    box-shadow: 0px 0px 2px 2px var(--color-text);
+}
+
+.div--input {
+    width: 90%;
+    height: fit-content;
+    position: relative;
+    transition: opacity 0.5s;
+}
+
+.input--name {
+    background-color: transparent;
+    border: 2px solid white;
+    width: 100%;
+    height: 50px;
+    font-size: 24px;
+    font-family: var(--font-title);
+    border-radius: 10px;
+    color: var(--color-text);
+    position: relative;
+    padding-left: 10px;
+}
+
+.img--send {
+    position: absolute;
+    cursor: pointer;
+    left: 90%;
+    width: 40px;
+    top: 15%;
+    transition: width 0.25s;
+}
+
+.img--send:hover {
+    width: 45px;
+}
