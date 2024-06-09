@@ -24,11 +24,15 @@ h1 {
     font-size: 32px;
     font-family: var(--font-title);
     text-align: center;
+    width: 400px;
 }
 
 p {
     font-family: var(--font-text);
     font-size: 24px;
+    display: flex;
+    justify-content: start;
+    flex-direction: column;
 }
 
 .color-yellow {
@@ -67,6 +71,7 @@ p {
 .p--text {
     color: var(--color-text);
     width: inherit;
+    min-width: 400px;
     padding: 30px;
     border: 2px solid var(--color-border);
     border-left: none;
@@ -107,6 +112,7 @@ button:hover {
 
 .div--input {
     width: 90%;
+    min-width: 300px;
     height: fit-content;
     position: relative;
     transition: opacity 0.5s;
@@ -136,4 +142,20 @@ button:hover {
 
 .img--send:hover {
     width: 45px;
+}
+
+.img--restart {
+    width: 65px;
+    margin: 0;
+    position: absolute;
+    top: 92.5%;
+    display: none;
+    cursor: pointer;
+    transition: all 0.5s;
+    border-radius: 40px;
+}
+
+.img--restart:hover {
+    transform: rotate(45deg);
+    background-color: var(--color-border);
 }
