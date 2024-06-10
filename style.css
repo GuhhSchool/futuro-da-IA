@@ -176,29 +176,37 @@ button:hover {
         font-size: 18px;
     }
 
+    body {
+        align-items: start;
+    }
+
     .input--name {
         font-size: 20px;
     }
 
+    .div--main {
+        justify-content: start;
+    }
     .div--anim-background {
-        display: none;
+        width: 80vw;
+        height: auto;
     }   
 
     .div--main {
-        position: relative;
         padding: 20px;
-        position: absolute;
         width: 80vw;
         height: auto;
-        background-color: var(--color-background-box);
-        border: 2px solid var(--color-border);
-        border-radius: 15px;
         transition: height 0.5s;
     }
 
     .p--text {
         display: flex;
-        width: 90%;
+        width: 80%;
+        padding: 20px;
         min-width: auto;
+    }
+
+    .img--restart {
+        top: 94%;
     }
 }
