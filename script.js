@@ -191,16 +191,20 @@ function verifyName() {
 function preview() {
     divInputElement.style.opacity = 0;
     textHistoryElement.style.opacity = 0;
+    const { border, textAlign } = textHistoryElement.style; 
 
     setTimeout(() => {
         divInputElement.style.display = 'none';
-        textHistoryElement.textContent = 'Vamos começar';
+        textHistoryElement.style.cssText = 'border: none; text-align: center';
+        textHistoryElement.textContent = 'Vamos começar...';
+
         beforeHeight();
         textHistoryElement.style.opacity = 1;
     }, 1000);
 
     setTimeout(() => textHistoryElement.style.opacity = 0, 2000);
     setTimeout(() => {
+        textHistoryElement.style.cssText = `border: ${border}, text-align: ${textAlign}`;
         new showHistory(currentIndex);
     }, 3000);
 } 

@@ -24,7 +24,7 @@ h1 {
     font-size: 32px;
     font-family: var(--font-title);
     text-align: center;
-    width: 400px;
+    min-width: 70%;
 }
 
 p {
@@ -111,8 +111,7 @@ button:hover {
 }
 
 .div--input {
-    width: 90%;
-    min-width: 300px;
+    width: 95%;
     height: fit-content;
     position: relative;
     transition: opacity 0.5s;
@@ -129,6 +128,10 @@ button:hover {
     color: var(--color-text);
     position: relative;
     padding-left: 10px;
+}
+
+.input--name::placeholder {
+    width: 80%;
 }
 
 .img--send {
@@ -158,4 +161,44 @@ button:hover {
 .img--restart:hover {
     transform: rotate(45deg);
     background-color: var(--color-border);
+}
+
+@media screen and (max-width: 768px) {
+    h1 {
+        font-size: 28px;
+    }
+
+    p {
+        font-size: 20px;
+    }
+
+    button {
+        font-size: 18px;
+    }
+
+    .input--name {
+        font-size: 20px;
+    }
+
+    .div--anim-background {
+        display: none;
+    }   
+
+    .div--main {
+        position: relative;
+        padding: 20px;
+        position: absolute;
+        width: 80vw;
+        height: auto;
+        background-color: var(--color-background-box);
+        border: 2px solid var(--color-border);
+        border-radius: 15px;
+        transition: height 0.5s;
+    }
+
+    .p--text {
+        display: flex;
+        width: 90%;
+        min-width: auto;
+    }
 }
