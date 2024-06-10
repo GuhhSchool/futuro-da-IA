@@ -8,4 +8,4 @@ Não se preocupe na hora de fazer as escolhas, pois não há exatamente um certo
 
 > Projeto para a matéria de Trilha de Programação 2 (Matemática 2) do Ensino Médio.
 
-> Link do projeto: https://guhhschool.github.io/futuro-da-ia
+> Link do projeto: https://guhhschool.github.io/futuro-da-IA
